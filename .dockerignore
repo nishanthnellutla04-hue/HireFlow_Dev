@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+build
+.git
+.github
+.vscode
+README.md
+Dockerfile
+.dockerignore
+npm-debug.log
+.vercel

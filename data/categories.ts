@@ -1,0 +1,98 @@
+import { type Category } from "@/types";
+
+export const categories: Category[] = [
+  {
+    id: "engineering",
+    name: "Engineering",
+    slug: "engineering",
+    icon: "Code2",
+    jobCount: 1247,
+    description: "Software engineering, frontend, backend, fullstack, and DevOps roles",
+    color: "oklch(0.58 0.2 270)",
+  },
+  {
+    id: "design",
+    name: "Design",
+    slug: "design",
+    icon: "Palette",
+    jobCount: 534,
+    description: "UI/UX design, product design, graphic design, and motion design",
+    color: "oklch(0.65 0.2 330)",
+  },
+  {
+    id: "product",
+    name: "Product",
+    slug: "product",
+    icon: "Package",
+    jobCount: 398,
+    description: "Product management, product strategy, and product operations",
+    color: "oklch(0.6 0.17 155)",
+  },
+  {
+    id: "data-science",
+    name: "Data Science",
+    slug: "data-science",
+    icon: "BarChart3",
+    jobCount: 672,
+    description: "Data science, machine learning, data engineering, and analytics",
+    color: "oklch(0.65 0.15 200)",
+  },
+  {
+    id: "marketing",
+    name: "Marketing",
+    slug: "marketing",
+    icon: "Megaphone",
+    jobCount: 345,
+    description: "Digital marketing, growth, content strategy, and brand management",
+    color: "oklch(0.75 0.16 75)",
+  },
+  {
+    id: "sales",
+    name: "Sales",
+    slug: "sales",
+    icon: "TrendingUp",
+    jobCount: 289,
+    description: "Sales, business development, account management, and partnerships",
+    color: "oklch(0.58 0.2 25)",
+  },
+  {
+    id: "devops",
+    name: "DevOps & Cloud",
+    slug: "devops",
+    icon: "Cloud",
+    jobCount: 456,
+    description: "DevOps, SRE, cloud infrastructure, and platform engineering",
+    color: "oklch(0.55 0.18 240)",
+  },
+  {
+    id: "security",
+    name: "Security",
+    slug: "security",
+    icon: "Shield",
+    jobCount: 234,
+    description: "Cybersecurity, application security, and security engineering",
+    color: "oklch(0.5 0.15 30)",
+  },
+  {
+    id: "mobile",
+    name: "Mobile Development",
+    slug: "mobile",
+    icon: "Smartphone",
+    jobCount: 378,
+    description: "iOS, Android, React Native, and Flutter development",
+    color: "oklch(0.6 0.18 145)",
+  },
+  {
+    id: "ai-ml",
+    name: "AI & Machine Learning",
+    slug: "ai-ml",
+    icon: "Brain",
+    jobCount: 567,
+    description: "AI research, machine learning engineering, NLP, and computer vision",
+    color: "oklch(0.58 0.22 300)",
+  },
+];
+
+export function getCategoryBySlug(slug: string): Category | undefined {
+  return categories.find((c) => c.slug === slug);
+}
